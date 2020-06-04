@@ -15,7 +15,6 @@ rec = sr.Recognizer()
 
 def record_audio(ask=False):
     if ask:
-        
         bot_speak(ask)
     with sr.Microphone() as source:
         audio = rec.listen(source)
